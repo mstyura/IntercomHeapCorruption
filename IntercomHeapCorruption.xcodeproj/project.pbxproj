@@ -14,6 +14,7 @@
 		2954E44429B88AD500F3C763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2954E44329B88AD500F3C763 /* Assets.xcassets */; };
 		2954E44729B88AD500F3C763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2954E44529B88AD500F3C763 /* LaunchScreen.storyboard */; };
 		2954E44A29B88AD500F3C763 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2954E44929B88AD500F3C763 /* main.m */; };
+		2954E45229B88B4700F3C763 /* Intercom in Frameworks */ = {isa = PBXBuildFile; productRef = 2954E45129B88B4700F3C763 /* Intercom */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2954E45229B88B4700F3C763 /* Intercom in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = IntercomHeapCorruption;
+			packageProductDependencies = (
+				2954E45129B88B4700F3C763 /* Intercom */,
+			);
 			productName = IntercomHeapCorruption;
 			productReference = 2954E43429B88AD400F3C763 /* IntercomHeapCorruption.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 2954E42B29B88AD400F3C763;
+			packageReferences = (
+				2954E45029B88B4700F3C763 /* XCRemoteSwiftPackageReference "intercom-ios" */,
+			);
 			productRefGroup = 2954E43529B88AD400F3C763 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +308,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +336,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2954E45029B88B4700F3C763 /* XCRemoteSwiftPackageReference "intercom-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/intercom/intercom-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 14.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2954E45129B88B4700F3C763 /* Intercom */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2954E45029B88B4700F3C763 /* XCRemoteSwiftPackageReference "intercom-ios" */;
+			productName = Intercom;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2954E42C29B88AD400F3C763 /* Project object */;
 }
