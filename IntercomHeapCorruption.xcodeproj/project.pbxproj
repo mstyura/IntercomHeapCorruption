@@ -378,7 +378,7 @@
 			repositoryURL = "https://github.com/intercom/intercom-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 14.0.7;
+				version = 14.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
