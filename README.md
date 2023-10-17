@@ -14,7 +14,7 @@ Heap corruption checker does not detect corrupted memory (because memory should 
 
 ## Additional info
 
-Demo application is empty project with single SPM dependency of https://github.com/intercom/intercom-ios/tree/14.0.7 (issue is also presented at least since version of `10.3.2`).
+Demo application is empty project with single SPM dependency of https://github.com/intercom/intercom-ios/tree/16.1.1 (issue is also presented at least since version of `10.3.2`).
 It is configured to compile in release mode. 
 `libmalloc` checks are enabled after each manipulation with heap (after each call to `malloc` & `free`).
 
@@ -23,7 +23,7 @@ It is configured to compile in release mode.
 `asan` is unable to detect memory problem neither on device or simulator.
 
 
-Here is and example of debugger output when issue is reproduced during launch:
+Here is and **example** of debugger output when issue is reproduced during launch (it might be different from launch to launch due to nature of a problem: memory could be corrupted in one place, but detection could happen in other place):
 ```log
 IntercomHeapCorruption(3588,0x1f2125900) malloc: Unrecognized value for MallocDebugReport (1) - using 'stderr'
 IntercomHeapCorruption(3588,0x1f2125900) malloc: enabling abort() on bad malloc or free
